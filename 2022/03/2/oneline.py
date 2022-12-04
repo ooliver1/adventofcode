@@ -1,0 +1,1 @@
+with open("input.txt") as f: (data := f.read().splitlines(), print(sum(__import__("string").ascii_letters.index(__import__("functools").reduce(__import__("operator").and_, map(set, group)).pop()) + 1 for group in [data[i:i+3] for i in range(0, len(data), 3)])))

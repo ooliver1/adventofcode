@@ -1,0 +1,1 @@
+with open("input.txt") as f: (ascii_letters := __import__("string").ascii_letters, print(sum(ascii_letters.index((set(line[:len(line)//2]) & set(line[len(line)//2:])).pop()) + 1 for line in f.read().splitlines())))
