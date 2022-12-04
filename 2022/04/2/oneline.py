@@ -1,0 +1,1 @@
+with open("input.txt") as f: print(sum(len(set(range(int(pair[0].split("-")[0]), int(pair[0].split("-")[1]) + 1)) & set(range(int(pair[1].split("-")[0]), int(pair[1].split("-")[1]) + 1))) > 0 for pair in [pair.split(",") for pair in f.read().splitlines()]))
