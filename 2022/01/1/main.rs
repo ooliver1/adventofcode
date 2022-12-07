@@ -3,11 +3,12 @@ fn main() {
         .unwrap()
         .split("\n\n")
         .map(|s| {
-            s.split("\n")
+            s.split('\n')
                 .map(|s| s.parse::<u32>().unwrap())
                 .sum::<u32>()
         })
         .max()
         .unwrap();
+
     println!("{}", val);
 }

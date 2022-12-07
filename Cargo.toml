@@ -1,0 +1,24 @@
+[package]
+name = "main"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "2022-01-1"
+path = "2022/01/1/main.rs"
+
+[[bin]]
+name = "2022-01-2"
+path = "2022/01/2/main.rs"
+
+[[bin]]
+name = "2022-02-1"
+path = "2022/02/1/main.rs"
+
+[[bin]]
+name = "2022-02-2"
+path = "2022/02/2/main.rs"
+
+[dependencies]
+phf = { version = "0.11.1", features = ["macros"] }
+
